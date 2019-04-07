@@ -18,7 +18,7 @@ def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_
 "SELECT Projects.title, Pledges.amount - Projects.funding_goal
 FROM projects JOIN pledges ON Projects.id = Pledges.user_id
 GROUP BY Projects.title
-HAVING Pledges.amount >= Projects.funding_goal;
+;
 "
 end
 
